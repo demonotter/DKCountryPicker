@@ -5,6 +5,6 @@ DEPENDENCIES:
   - libPhoneNumber-iOS
 
 SPEC CHECKSUMS:
-  libPhoneNumber-iOS: 247491020e32a648b5cf8b284f5fcf3df15af61e
+  libPhoneNumber-iOS: 6509dafa7e76cadcd7ebf58e00337d90e716bd40
 
-COCOAPODS: 0.28.0
+COCOAPODS: 0.35.0

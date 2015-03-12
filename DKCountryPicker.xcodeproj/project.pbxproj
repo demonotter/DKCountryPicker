@@ -1,518 +1,1151 @@
-// !$*UTF8*$!
-{
-	archiveVersion = 1;
-	classes = {
-	};
-	objectVersion = 46;
-	objects = {
-
-/* Begin PBXBuildFile section */
-		EA9289DF41844851AAC398E6 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 13A21688391749B4A210BE18 /* libPods.a */; };
-		F7FF73311874D71B0041FEBD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F7FF73301874D71B0041FEBD /* Foundation.framework */; };
-		F7FF73331874D71B0041FEBD /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F7FF73321874D71B0041FEBD /* CoreGraphics.framework */; };
-		F7FF73351874D71B0041FEBD /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F7FF73341874D71B0041FEBD /* UIKit.framework */; };
-		F7FF733B1874D71B0041FEBD /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F7FF73391874D71B0041FEBD /* InfoPlist.strings */; };
-		F7FF733D1874D71B0041FEBD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F7FF733C1874D71B0041FEBD /* main.m */; };
-		F7FF73431874D71B0041FEBD /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F7FF73421874D71B0041FEBD /* Images.xcassets */; };
-		F7FF734A1874D71B0041FEBD /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F7FF73491874D71B0041FEBD /* XCTest.framework */; };
-		F7FF734B1874D71B0041FEBD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F7FF73301874D71B0041FEBD /* Foundation.framework */; };
-		F7FF734C1874D71B0041FEBD /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F7FF73341874D71B0041FEBD /* UIKit.framework */; };
-		F7FF73541874D71B0041FEBD /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F7FF73521874D71B0041FEBD /* InfoPlist.strings */; };
-		F7FF73561874D71B0041FEBD /* DKCountryPickerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F7FF73551874D71B0041FEBD /* DKCountryPickerTests.m */; };
-		F7FF73661874D79C0041FEBD /* DKAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F7FF73601874D79C0041FEBD /* DKAppDelegate.m */; };
-		F7FF73671874D79C0041FEBD /* DKCountryPickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F7FF73621874D79C0041FEBD /* DKCountryPickerViewController.m */; };
-		F7FF73681874D79C0041FEBD /* DKDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F7FF73641874D79C0041FEBD /* DKDemoViewController.m */; };
-		F7FF73691874D79C0041FEBD /* Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F7FF73651874D79C0041FEBD /* Storyboard.storyboard */; };
-/* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		F7FF734D1874D71B0041FEBD /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = F7FF73251874D71B0041FEBD /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = F7FF732C1874D71B0041FEBD;
-			remoteInfo = DKCountryPicker;
-		};
-/* End PBXContainerItemProxy section */
-
-/* Begin PBXFileReference section */
-		13A21688391749B4A210BE18 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		E84836093C50479DA71FC8CA /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
-		F7FF732D1874D71B0041FEBD /* DKCountryPicker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DKCountryPicker.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		F7FF73301874D71B0041FEBD /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		F7FF73321874D71B0041FEBD /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		F7FF73341874D71B0041FEBD /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
-		F7FF73381874D71B0041FEBD /* DKCountryPicker-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "DKCountryPicker-Info.plist"; sourceTree = "<group>"; };
-		F7FF733A1874D71B0041FEBD /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		F7FF733C1874D71B0041FEBD /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		F7FF733E1874D71B0041FEBD /* DKCountryPicker-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DKCountryPicker-Prefix.pch"; sourceTree = "<group>"; };
-		F7FF73421874D71B0041FEBD /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		F7FF73481874D71B0041FEBD /* DKCountryPickerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DKCountryPickerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		F7FF73491874D71B0041FEBD /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
-		F7FF73511874D71B0041FEBD /* DKCountryPickerTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "DKCountryPickerTests-Info.plist"; sourceTree = "<group>"; };
-		F7FF73531874D71B0041FEBD /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		F7FF73551874D71B0041FEBD /* DKCountryPickerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DKCountryPickerTests.m; sourceTree = "<group>"; };
-		F7FF735F1874D79C0041FEBD /* DKAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DKAppDelegate.h; sourceTree = "<group>"; };
-		F7FF73601874D79C0041FEBD /* DKAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DKAppDelegate.m; sourceTree = "<group>"; };
-		F7FF73611874D79C0041FEBD /* DKCountryPickerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DKCountryPickerViewController.h; sourceTree = "<group>"; };
-		F7FF73621874D79C0041FEBD /* DKCountryPickerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DKCountryPickerViewController.m; sourceTree = "<group>"; };
-		F7FF73631874D79C0041FEBD /* DKDemoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DKDemoViewController.h; sourceTree = "<group>"; };
-		F7FF73641874D79C0041FEBD /* DKDemoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DKDemoViewController.m; sourceTree = "<group>"; };
-		F7FF73651874D79C0041FEBD /* Storyboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Storyboard.storyboard; sourceTree = "<group>"; };
-/* End PBXFileReference section */
-
-/* Begin PBXFrameworksBuildPhase section */
-		F7FF732A1874D71B0041FEBD /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				F7FF73331874D71B0041FEBD /* CoreGraphics.framework in Frameworks */,
-				F7FF73351874D71B0041FEBD /* UIKit.framework in Frameworks */,
-				F7FF73311874D71B0041FEBD /* Foundation.framework in Frameworks */,
-				EA9289DF41844851AAC398E6 /* libPods.a in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		F7FF73451874D71B0041FEBD /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				F7FF734A1874D71B0041FEBD /* XCTest.framework in Frameworks */,
-				F7FF734C1874D71B0041FEBD /* UIKit.framework in Frameworks */,
-				F7FF734B1874D71B0041FEBD /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXFrameworksBuildPhase section */
-
-/* Begin PBXGroup section */
-		F7FF73241874D71B0041FEBD = {
-			isa = PBXGroup;
-			children = (
-				F7FF73361874D71B0041FEBD /* DKCountryPicker */,
-				F7FF734F1874D71B0041FEBD /* DKCountryPickerTests */,
-				F7FF732F1874D71B0041FEBD /* Frameworks */,
-				F7FF732E1874D71B0041FEBD /* Products */,
-				E84836093C50479DA71FC8CA /* Pods.xcconfig */,
-			);
-			sourceTree = "<group>";
-		};
-		F7FF732E1874D71B0041FEBD /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				F7FF732D1874D71B0041FEBD /* DKCountryPicker.app */,
-				F7FF73481874D71B0041FEBD /* DKCountryPickerTests.xctest */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		F7FF732F1874D71B0041FEBD /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				F7FF73301874D71B0041FEBD /* Foundation.framework */,
-				F7FF73321874D71B0041FEBD /* CoreGraphics.framework */,
-				F7FF73341874D71B0041FEBD /* UIKit.framework */,
-				F7FF73491874D71B0041FEBD /* XCTest.framework */,
-				13A21688391749B4A210BE18 /* libPods.a */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		F7FF73361874D71B0041FEBD /* DKCountryPicker */ = {
-			isa = PBXGroup;
-			children = (
-				F7FF735F1874D79C0041FEBD /* DKAppDelegate.h */,
-				F7FF73601874D79C0041FEBD /* DKAppDelegate.m */,
-				F7FF73611874D79C0041FEBD /* DKCountryPickerViewController.h */,
-				F7FF73621874D79C0041FEBD /* DKCountryPickerViewController.m */,
-				F7FF73631874D79C0041FEBD /* DKDemoViewController.h */,
-				F7FF73641874D79C0041FEBD /* DKDemoViewController.m */,
-				F7FF73651874D79C0041FEBD /* Storyboard.storyboard */,
-				F7FF73421874D71B0041FEBD /* Images.xcassets */,
-				F7FF73371874D71B0041FEBD /* Supporting Files */,
-			);
-			path = DKCountryPicker;
-			sourceTree = "<group>";
-		};
-		F7FF73371874D71B0041FEBD /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				F7FF73381874D71B0041FEBD /* DKCountryPicker-Info.plist */,
-				F7FF73391874D71B0041FEBD /* InfoPlist.strings */,
-				F7FF733C1874D71B0041FEBD /* main.m */,
-				F7FF733E1874D71B0041FEBD /* DKCountryPicker-Prefix.pch */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		F7FF734F1874D71B0041FEBD /* DKCountryPickerTests */ = {
-			isa = PBXGroup;
-			children = (
-				F7FF73551874D71B0041FEBD /* DKCountryPickerTests.m */,
-				F7FF73501874D71B0041FEBD /* Supporting Files */,
-			);
-			path = DKCountryPickerTests;
-			sourceTree = "<group>";
-		};
-		F7FF73501874D71B0041FEBD /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				F7FF73511874D71B0041FEBD /* DKCountryPickerTests-Info.plist */,
-				F7FF73521874D71B0041FEBD /* InfoPlist.strings */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-/* End PBXGroup section */
-
-/* Begin PBXNativeTarget section */
-		F7FF732C1874D71B0041FEBD /* DKCountryPicker */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = F7FF73591874D71B0041FEBD /* Build configuration list for PBXNativeTarget "DKCountryPicker" */;
-			buildPhases = (
-				2EBF9276A3B04B6DB18AC832 /* Check Pods Manifest.lock */,
-				F7FF73291874D71B0041FEBD /* Sources */,
-				F7FF732A1874D71B0041FEBD /* Frameworks */,
-				F7FF732B1874D71B0041FEBD /* Resources */,
-				645843A5F4D64D6B960B18C4 /* Copy Pods Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = DKCountryPicker;
-			productName = DKCountryPicker;
-			productReference = F7FF732D1874D71B0041FEBD /* DKCountryPicker.app */;
-			productType = "com.apple.product-type.application";
-		};
-		F7FF73471874D71B0041FEBD /* DKCountryPickerTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = F7FF735C1874D71B0041FEBD /* Build configuration list for PBXNativeTarget "DKCountryPickerTests" */;
-			buildPhases = (
-				F7FF73441874D71B0041FEBD /* Sources */,
-				F7FF73451874D71B0041FEBD /* Frameworks */,
-				F7FF73461874D71B0041FEBD /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				F7FF734E1874D71B0041FEBD /* PBXTargetDependency */,
-			);
-			name = DKCountryPickerTests;
-			productName = DKCountryPickerTests;
-			productReference = F7FF73481874D71B0041FEBD /* DKCountryPickerTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-/* End PBXNativeTarget section */
-
-/* Begin PBXProject section */
-		F7FF73251874D71B0041FEBD /* Project object */ = {
-			isa = PBXProject;
-			attributes = {
-				CLASSPREFIX = DK;
-				LastUpgradeCheck = 0500;
-				ORGANIZATIONNAME = "David Kasper";
-				TargetAttributes = {
-					F7FF73471874D71B0041FEBD = {
-						TestTargetID = F7FF732C1874D71B0041FEBD;
-					};
-				};
-			};
-			buildConfigurationList = F7FF73281874D71B0041FEBD /* Build configuration list for PBXProject "DKCountryPicker" */;
-			compatibilityVersion = "Xcode 3.2";
-			developmentRegion = English;
-			hasScannedForEncodings = 0;
-			knownRegions = (
-				en,
-			);
-			mainGroup = F7FF73241874D71B0041FEBD;
-			productRefGroup = F7FF732E1874D71B0041FEBD /* Products */;
-			projectDirPath = "";
-			projectRoot = "";
-			targets = (
-				F7FF732C1874D71B0041FEBD /* DKCountryPicker */,
-				F7FF73471874D71B0041FEBD /* DKCountryPickerTests */,
-			);
-		};
-/* End PBXProject section */
-
-/* Begin PBXResourcesBuildPhase section */
-		F7FF732B1874D71B0041FEBD /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				F7FF733B1874D71B0041FEBD /* InfoPlist.strings in Resources */,
-				F7FF73431874D71B0041FEBD /* Images.xcassets in Resources */,
-				F7FF73691874D79C0041FEBD /* Storyboard.storyboard in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		F7FF73461874D71B0041FEBD /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				F7FF73541874D71B0041FEBD /* InfoPlist.strings in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		2EBF9276A3B04B6DB18AC832 /* Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		645843A5F4D64D6B960B18C4 /* Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
-
-/* Begin PBXSourcesBuildPhase section */
-		F7FF73291874D71B0041FEBD /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				F7FF73681874D79C0041FEBD /* DKDemoViewController.m in Sources */,
-				F7FF733D1874D71B0041FEBD /* main.m in Sources */,
-				F7FF73661874D79C0041FEBD /* DKAppDelegate.m in Sources */,
-				F7FF73671874D79C0041FEBD /* DKCountryPickerViewController.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		F7FF73441874D71B0041FEBD /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				F7FF73561874D71B0041FEBD /* DKCountryPickerTests.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		F7FF734E1874D71B0041FEBD /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = F7FF732C1874D71B0041FEBD /* DKCountryPicker */;
-			targetProxy = F7FF734D1874D71B0041FEBD /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		F7FF73391874D71B0041FEBD /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				F7FF733A1874D71B0041FEBD /* en */,
-			);
-			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		F7FF73521874D71B0041FEBD /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				F7FF73531874D71B0041FEBD /* en */,
-			);
-			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
-
-/* Begin XCBuildConfiguration section */
-		F7FF73571874D71B0041FEBD /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				COPY_PHASE_STRIP = NO;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
-				ONLY_ACTIVE_ARCH = YES;
-				SDKROOT = iphoneos;
-			};
-			name = Debug;
-		};
-		F7FF73581874D71B0041FEBD /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				COPY_PHASE_STRIP = YES;
-				ENABLE_NS_ASSERTIONS = NO;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
-				SDKROOT = iphoneos;
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
-		F7FF735A1874D71B0041FEBD /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = E84836093C50479DA71FC8CA /* Pods.xcconfig */;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "DKCountryPicker/DKCountryPicker-Prefix.pch";
-				INFOPLIST_FILE = "DKCountryPicker/DKCountryPicker-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				WRAPPER_EXTENSION = app;
-			};
-			name = Debug;
-		};
-		F7FF735B1874D71B0041FEBD /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = E84836093C50479DA71FC8CA /* Pods.xcconfig */;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "DKCountryPicker/DKCountryPicker-Prefix.pch";
-				INFOPLIST_FILE = "DKCountryPicker/DKCountryPicker-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				WRAPPER_EXTENSION = app;
-			};
-			name = Release;
-		};
-		F7FF735D1874D71B0041FEBD /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/DKCountryPicker.app/DKCountryPicker";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "DKCountryPicker/DKCountryPicker-Prefix.pch";
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = "DKCountryPickerTests/DKCountryPickerTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = xctest;
-			};
-			name = Debug;
-		};
-		F7FF735E1874D71B0041FEBD /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/DKCountryPicker.app/DKCountryPicker";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "DKCountryPicker/DKCountryPicker-Prefix.pch";
-				INFOPLIST_FILE = "DKCountryPickerTests/DKCountryPickerTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = xctest;
-			};
-			name = Release;
-		};
-/* End XCBuildConfiguration section */
-
-/* Begin XCConfigurationList section */
-		F7FF73281874D71B0041FEBD /* Build configuration list for PBXProject "DKCountryPicker" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				F7FF73571874D71B0041FEBD /* Debug */,
-				F7FF73581874D71B0041FEBD /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		F7FF73591874D71B0041FEBD /* Build configuration list for PBXNativeTarget "DKCountryPicker" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				F7FF735A1874D71B0041FEBD /* Debug */,
-				F7FF735B1874D71B0041FEBD /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		F7FF735C1874D71B0041FEBD /* Build configuration list for PBXNativeTarget "DKCountryPickerTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				F7FF735D1874D71B0041FEBD /* Debug */,
-				F7FF735E1874D71B0041FEBD /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-/* End XCConfigurationList section */
-	};
-	rootObject = F7FF73251874D71B0041FEBD /* Project object */;
-}
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>archiveVersion</key>
+	<string>1</string>
+	<key>classes</key>
+	<dict/>
+	<key>objectVersion</key>
+	<string>46</string>
+	<key>objects</key>
+	<dict>
+		<key>00901166409165C0A6E777CF</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>4399357A34068AE3D576990E</string>
+				<string>C8F2E56086AF18B5AA2A6702</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Pods</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>13A21688391749B4A210BE18</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>archive.ar</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>libPods.a</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+		<key>2EBF9276A3B04B6DB18AC832</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array/>
+			<key>inputPaths</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXShellScriptBuildPhase</string>
+			<key>name</key>
+			<string>Check Pods Manifest.lock</string>
+			<key>outputPaths</key>
+			<array/>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+			<key>shellPath</key>
+			<string>/bin/sh</string>
+			<key>shellScript</key>
+			<string>diff "${PODS_ROOT}/../Podfile.lock" "${PODS_ROOT}/Manifest.lock" &gt; /dev/null
+if [[ $? != 0 ]] ; then
+    cat &lt;&lt; EOM
+error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.
+EOM
+    exit 1
+fi
+</string>
+			<key>showEnvVarsInLog</key>
+			<string>0</string>
+		</dict>
+		<key>4399357A34068AE3D576990E</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.xcconfig</string>
+			<key>name</key>
+			<string>Pods.debug.xcconfig</string>
+			<key>path</key>
+			<string>Pods/Target Support Files/Pods/Pods.debug.xcconfig</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>645843A5F4D64D6B960B18C4</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array/>
+			<key>inputPaths</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXShellScriptBuildPhase</string>
+			<key>name</key>
+			<string>Copy Pods Resources</string>
+			<key>outputPaths</key>
+			<array/>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+			<key>shellPath</key>
+			<string>/bin/sh</string>
+			<key>shellScript</key>
+			<string>"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh"
+</string>
+			<key>showEnvVarsInLog</key>
+			<string>0</string>
+		</dict>
+		<key>C8F2E56086AF18B5AA2A6702</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.xcconfig</string>
+			<key>name</key>
+			<string>Pods.release.xcconfig</string>
+			<key>path</key>
+			<string>Pods/Target Support Files/Pods/Pods.release.xcconfig</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>EA9289DF41844851AAC398E6</key>
+		<dict>
+			<key>fileRef</key>
+			<string>13A21688391749B4A210BE18</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>F7FF73241874D71B0041FEBD</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>F7FF73361874D71B0041FEBD</string>
+				<string>F7FF734F1874D71B0041FEBD</string>
+				<string>F7FF732F1874D71B0041FEBD</string>
+				<string>F7FF732E1874D71B0041FEBD</string>
+				<string>00901166409165C0A6E777CF</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>F7FF73251874D71B0041FEBD</key>
+		<dict>
+			<key>attributes</key>
+			<dict>
+				<key>CLASSPREFIX</key>
+				<string>DK</string>
+				<key>LastUpgradeCheck</key>
+				<string>0500</string>
+				<key>ORGANIZATIONNAME</key>
+				<string>David Kasper</string>
+				<key>TargetAttributes</key>
+				<dict>
+					<key>F7FF73471874D71B0041FEBD</key>
+					<dict>
+						<key>TestTargetID</key>
+						<string>F7FF732C1874D71B0041FEBD</string>
+					</dict>
+				</dict>
+			</dict>
+			<key>buildConfigurationList</key>
+			<string>F7FF73281874D71B0041FEBD</string>
+			<key>compatibilityVersion</key>
+			<string>Xcode 3.2</string>
+			<key>developmentRegion</key>
+			<string>English</string>
+			<key>hasScannedForEncodings</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXProject</string>
+			<key>knownRegions</key>
+			<array>
+				<string>en</string>
+			</array>
+			<key>mainGroup</key>
+			<string>F7FF73241874D71B0041FEBD</string>
+			<key>productRefGroup</key>
+			<string>F7FF732E1874D71B0041FEBD</string>
+			<key>projectDirPath</key>
+			<string></string>
+			<key>projectReferences</key>
+			<array/>
+			<key>projectRoot</key>
+			<string></string>
+			<key>targets</key>
+			<array>
+				<string>F7FF732C1874D71B0041FEBD</string>
+				<string>F7FF73471874D71B0041FEBD</string>
+			</array>
+		</dict>
+		<key>F7FF73281874D71B0041FEBD</key>
+		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>F7FF73571874D71B0041FEBD</string>
+				<string>F7FF73581874D71B0041FEBD</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>defaultConfigurationName</key>
+			<string>Release</string>
+			<key>isa</key>
+			<string>XCConfigurationList</string>
+		</dict>
+		<key>F7FF73291874D71B0041FEBD</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>F7FF73681874D79C0041FEBD</string>
+				<string>F7FF733D1874D71B0041FEBD</string>
+				<string>F7FF73661874D79C0041FEBD</string>
+				<string>F7FF73671874D79C0041FEBD</string>
+			</array>
+			<key>isa</key>
+			<string>PBXSourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>F7FF732A1874D71B0041FEBD</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>F7FF73331874D71B0041FEBD</string>
+				<string>F7FF73351874D71B0041FEBD</string>
+				<string>F7FF73311874D71B0041FEBD</string>
+				<string>EA9289DF41844851AAC398E6</string>
+			</array>
+			<key>isa</key>
+			<string>PBXFrameworksBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>F7FF732B1874D71B0041FEBD</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>F7FF733B1874D71B0041FEBD</string>
+				<string>F7FF73431874D71B0041FEBD</string>
+				<string>F7FF73691874D79C0041FEBD</string>
+			</array>
+			<key>isa</key>
+			<string>PBXResourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>F7FF732C1874D71B0041FEBD</key>
+		<dict>
+			<key>buildConfigurationList</key>
+			<string>F7FF73591874D71B0041FEBD</string>
+			<key>buildPhases</key>
+			<array>
+				<string>2EBF9276A3B04B6DB18AC832</string>
+				<string>F7FF73291874D71B0041FEBD</string>
+				<string>F7FF732A1874D71B0041FEBD</string>
+				<string>F7FF732B1874D71B0041FEBD</string>
+				<string>645843A5F4D64D6B960B18C4</string>
+			</array>
+			<key>buildRules</key>
+			<array/>
+			<key>dependencies</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXNativeTarget</string>
+			<key>name</key>
+			<string>DKCountryPicker</string>
+			<key>productName</key>
+			<string>DKCountryPicker</string>
+			<key>productReference</key>
+			<string>F7FF732D1874D71B0041FEBD</string>
+			<key>productType</key>
+			<string>com.apple.product-type.application</string>
+		</dict>
+		<key>F7FF732D1874D71B0041FEBD</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>wrapper.application</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>DKCountryPicker.app</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+		<key>F7FF732E1874D71B0041FEBD</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>F7FF732D1874D71B0041FEBD</string>
+				<string>F7FF73481874D71B0041FEBD</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Products</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>F7FF732F1874D71B0041FEBD</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>F7FF73301874D71B0041FEBD</string>
+				<string>F7FF73321874D71B0041FEBD</string>
+				<string>F7FF73341874D71B0041FEBD</string>
+				<string>F7FF73491874D71B0041FEBD</string>
+				<string>13A21688391749B4A210BE18</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Frameworks</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>F7FF73301874D71B0041FEBD</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>wrapper.framework</string>
+			<key>name</key>
+			<string>Foundation.framework</string>
+			<key>path</key>
+			<string>System/Library/Frameworks/Foundation.framework</string>
+			<key>sourceTree</key>
+			<string>SDKROOT</string>
+		</dict>
+		<key>F7FF73311874D71B0041FEBD</key>
+		<dict>
+			<key>fileRef</key>
+			<string>F7FF73301874D71B0041FEBD</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>F7FF73321874D71B0041FEBD</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>wrapper.framework</string>
+			<key>name</key>
+			<string>CoreGraphics.framework</string>
+			<key>path</key>
+			<string>System/Library/Frameworks/CoreGraphics.framework</string>
+			<key>sourceTree</key>
+			<string>SDKROOT</string>
+		</dict>
+		<key>F7FF73331874D71B0041FEBD</key>
+		<dict>
+			<key>fileRef</key>
+			<string>F7FF73321874D71B0041FEBD</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>F7FF73341874D71B0041FEBD</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>wrapper.framework</string>
+			<key>name</key>
+			<string>UIKit.framework</string>
+			<key>path</key>
+			<string>System/Library/Frameworks/UIKit.framework</string>
+			<key>sourceTree</key>
+			<string>SDKROOT</string>
+		</dict>
+		<key>F7FF73351874D71B0041FEBD</key>
+		<dict>
+			<key>fileRef</key>
+			<string>F7FF73341874D71B0041FEBD</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>F7FF73361874D71B0041FEBD</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>F7FF735F1874D79C0041FEBD</string>
+				<string>F7FF73601874D79C0041FEBD</string>
+				<string>F7FF73611874D79C0041FEBD</string>
+				<string>F7FF73621874D79C0041FEBD</string>
+				<string>F7FF73631874D79C0041FEBD</string>
+				<string>F7FF73641874D79C0041FEBD</string>
+				<string>F7FF73651874D79C0041FEBD</string>
+				<string>F7FF73421874D71B0041FEBD</string>
+				<string>F7FF73371874D71B0041FEBD</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>path</key>
+			<string>DKCountryPicker</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>F7FF73371874D71B0041FEBD</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>F7FF73381874D71B0041FEBD</string>
+				<string>F7FF73391874D71B0041FEBD</string>
+				<string>F7FF733C1874D71B0041FEBD</string>
+				<string>F7FF733E1874D71B0041FEBD</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Supporting Files</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>F7FF73381874D71B0041FEBD</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.plist.xml</string>
+			<key>path</key>
+			<string>DKCountryPicker-Info.plist</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>F7FF73391874D71B0041FEBD</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>F7FF733A1874D71B0041FEBD</string>
+			</array>
+			<key>isa</key>
+			<string>PBXVariantGroup</string>
+			<key>name</key>
+			<string>InfoPlist.strings</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>F7FF733A1874D71B0041FEBD</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.plist.strings</string>
+			<key>name</key>
+			<string>en</string>
+			<key>path</key>
+			<string>en.lproj/InfoPlist.strings</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>F7FF733B1874D71B0041FEBD</key>
+		<dict>
+			<key>fileRef</key>
+			<string>F7FF73391874D71B0041FEBD</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>F7FF733C1874D71B0041FEBD</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>main.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>F7FF733D1874D71B0041FEBD</key>
+		<dict>
+			<key>fileRef</key>
+			<string>F7FF733C1874D71B0041FEBD</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>F7FF733E1874D71B0041FEBD</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>DKCountryPicker-Prefix.pch</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>F7FF73421874D71B0041FEBD</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>folder.assetcatalog</string>
+			<key>path</key>
+			<string>Images.xcassets</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>F7FF73431874D71B0041FEBD</key>
+		<dict>
+			<key>fileRef</key>
+			<string>F7FF73421874D71B0041FEBD</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>F7FF73441874D71B0041FEBD</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>F7FF73561874D71B0041FEBD</string>
+			</array>
+			<key>isa</key>
+			<string>PBXSourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>F7FF73451874D71B0041FEBD</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>F7FF734A1874D71B0041FEBD</string>
+				<string>F7FF734C1874D71B0041FEBD</string>
+				<string>F7FF734B1874D71B0041FEBD</string>
+			</array>
+			<key>isa</key>
+			<string>PBXFrameworksBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>F7FF73461874D71B0041FEBD</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>F7FF73541874D71B0041FEBD</string>
+			</array>
+			<key>isa</key>
+			<string>PBXResourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>F7FF73471874D71B0041FEBD</key>
+		<dict>
+			<key>buildConfigurationList</key>
+			<string>F7FF735C1874D71B0041FEBD</string>
+			<key>buildPhases</key>
+			<array>
+				<string>F7FF73441874D71B0041FEBD</string>
+				<string>F7FF73451874D71B0041FEBD</string>
+				<string>F7FF73461874D71B0041FEBD</string>
+			</array>
+			<key>buildRules</key>
+			<array/>
+			<key>dependencies</key>
+			<array>
+				<string>F7FF734E1874D71B0041FEBD</string>
+			</array>
+			<key>isa</key>
+			<string>PBXNativeTarget</string>
+			<key>name</key>
+			<string>DKCountryPickerTests</string>
+			<key>productName</key>
+			<string>DKCountryPickerTests</string>
+			<key>productReference</key>
+			<string>F7FF73481874D71B0041FEBD</string>
+			<key>productType</key>
+			<string>com.apple.product-type.bundle.unit-test</string>
+		</dict>
+		<key>F7FF73481874D71B0041FEBD</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>wrapper.cfbundle</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>DKCountryPickerTests.xctest</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+		<key>F7FF73491874D71B0041FEBD</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>wrapper.framework</string>
+			<key>name</key>
+			<string>XCTest.framework</string>
+			<key>path</key>
+			<string>Library/Frameworks/XCTest.framework</string>
+			<key>sourceTree</key>
+			<string>DEVELOPER_DIR</string>
+		</dict>
+		<key>F7FF734A1874D71B0041FEBD</key>
+		<dict>
+			<key>fileRef</key>
+			<string>F7FF73491874D71B0041FEBD</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>F7FF734B1874D71B0041FEBD</key>
+		<dict>
+			<key>fileRef</key>
+			<string>F7FF73301874D71B0041FEBD</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>F7FF734C1874D71B0041FEBD</key>
+		<dict>
+			<key>fileRef</key>
+			<string>F7FF73341874D71B0041FEBD</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>F7FF734D1874D71B0041FEBD</key>
+		<dict>
+			<key>containerPortal</key>
+			<string>F7FF73251874D71B0041FEBD</string>
+			<key>isa</key>
+			<string>PBXContainerItemProxy</string>
+			<key>proxyType</key>
+			<string>1</string>
+			<key>remoteGlobalIDString</key>
+			<string>F7FF732C1874D71B0041FEBD</string>
+			<key>remoteInfo</key>
+			<string>DKCountryPicker</string>
+		</dict>
+		<key>F7FF734E1874D71B0041FEBD</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXTargetDependency</string>
+			<key>target</key>
+			<string>F7FF732C1874D71B0041FEBD</string>
+			<key>targetProxy</key>
+			<string>F7FF734D1874D71B0041FEBD</string>
+		</dict>
+		<key>F7FF734F1874D71B0041FEBD</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>F7FF73551874D71B0041FEBD</string>
+				<string>F7FF73501874D71B0041FEBD</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>path</key>
+			<string>DKCountryPickerTests</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>F7FF73501874D71B0041FEBD</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>F7FF73511874D71B0041FEBD</string>
+				<string>F7FF73521874D71B0041FEBD</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Supporting Files</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>F7FF73511874D71B0041FEBD</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.plist.xml</string>
+			<key>path</key>
+			<string>DKCountryPickerTests-Info.plist</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>F7FF73521874D71B0041FEBD</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>F7FF73531874D71B0041FEBD</string>
+			</array>
+			<key>isa</key>
+			<string>PBXVariantGroup</string>
+			<key>name</key>
+			<string>InfoPlist.strings</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>F7FF73531874D71B0041FEBD</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.plist.strings</string>
+			<key>name</key>
+			<string>en</string>
+			<key>path</key>
+			<string>en.lproj/InfoPlist.strings</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>F7FF73541874D71B0041FEBD</key>
+		<dict>
+			<key>fileRef</key>
+			<string>F7FF73521874D71B0041FEBD</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>F7FF73551874D71B0041FEBD</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>DKCountryPickerTests.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>F7FF73561874D71B0041FEBD</key>
+		<dict>
+			<key>fileRef</key>
+			<string>F7FF73551874D71B0041FEBD</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>F7FF73571874D71B0041FEBD</key>
+		<dict>
+			<key>buildSettings</key>
+			<dict>
+				<key>ALWAYS_SEARCH_USER_PATHS</key>
+				<string>NO</string>
+				<key>ARCHS</key>
+				<string>$(ARCHS_STANDARD_INCLUDING_64_BIT)</string>
+				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
+				<string>gnu++0x</string>
+				<key>CLANG_CXX_LIBRARY</key>
+				<string>libc++</string>
+				<key>CLANG_ENABLE_MODULES</key>
+				<string>YES</string>
+				<key>CLANG_ENABLE_OBJC_ARC</key>
+				<string>YES</string>
+				<key>CLANG_WARN_BOOL_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_CONSTANT_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_DIRECT_OBJC_ISA_USAGE</key>
+				<string>YES_ERROR</string>
+				<key>CLANG_WARN_EMPTY_BODY</key>
+				<string>YES</string>
+				<key>CLANG_WARN_ENUM_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_INT_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_OBJC_ROOT_CLASS</key>
+				<string>YES_ERROR</string>
+				<key>CLANG_WARN__DUPLICATE_METHOD_MATCH</key>
+				<string>YES</string>
+				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
+				<string>iPhone Developer</string>
+				<key>COPY_PHASE_STRIP</key>
+				<string>NO</string>
+				<key>GCC_C_LANGUAGE_STANDARD</key>
+				<string>gnu99</string>
+				<key>GCC_DYNAMIC_NO_PIC</key>
+				<string>NO</string>
+				<key>GCC_OPTIMIZATION_LEVEL</key>
+				<string>0</string>
+				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
+				<array>
+					<string>DEBUG=1</string>
+					<string>$(inherited)</string>
+				</array>
+				<key>GCC_SYMBOLS_PRIVATE_EXTERN</key>
+				<string>NO</string>
+				<key>GCC_WARN_64_TO_32_BIT_CONVERSION</key>
+				<string>YES</string>
+				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
+				<string>YES_ERROR</string>
+				<key>GCC_WARN_UNDECLARED_SELECTOR</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNUSED_FUNCTION</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNUSED_VARIABLE</key>
+				<string>YES</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>7.0</string>
+				<key>ONLY_ACTIVE_ARCH</key>
+				<string>YES</string>
+				<key>SDKROOT</key>
+				<string>iphoneos</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Debug</string>
+		</dict>
+		<key>F7FF73581874D71B0041FEBD</key>
+		<dict>
+			<key>buildSettings</key>
+			<dict>
+				<key>ALWAYS_SEARCH_USER_PATHS</key>
+				<string>NO</string>
+				<key>ARCHS</key>
+				<string>$(ARCHS_STANDARD_INCLUDING_64_BIT)</string>
+				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
+				<string>gnu++0x</string>
+				<key>CLANG_CXX_LIBRARY</key>
+				<string>libc++</string>
+				<key>CLANG_ENABLE_MODULES</key>
+				<string>YES</string>
+				<key>CLANG_ENABLE_OBJC_ARC</key>
+				<string>YES</string>
+				<key>CLANG_WARN_BOOL_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_CONSTANT_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_DIRECT_OBJC_ISA_USAGE</key>
+				<string>YES_ERROR</string>
+				<key>CLANG_WARN_EMPTY_BODY</key>
+				<string>YES</string>
+				<key>CLANG_WARN_ENUM_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_INT_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_OBJC_ROOT_CLASS</key>
+				<string>YES_ERROR</string>
+				<key>CLANG_WARN__DUPLICATE_METHOD_MATCH</key>
+				<string>YES</string>
+				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
+				<string>iPhone Developer</string>
+				<key>COPY_PHASE_STRIP</key>
+				<string>YES</string>
+				<key>ENABLE_NS_ASSERTIONS</key>
+				<string>NO</string>
+				<key>GCC_C_LANGUAGE_STANDARD</key>
+				<string>gnu99</string>
+				<key>GCC_WARN_64_TO_32_BIT_CONVERSION</key>
+				<string>YES</string>
+				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
+				<string>YES_ERROR</string>
+				<key>GCC_WARN_UNDECLARED_SELECTOR</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNUSED_FUNCTION</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNUSED_VARIABLE</key>
+				<string>YES</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>7.0</string>
+				<key>SDKROOT</key>
+				<string>iphoneos</string>
+				<key>VALIDATE_PRODUCT</key>
+				<string>YES</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Release</string>
+		</dict>
+		<key>F7FF73591874D71B0041FEBD</key>
+		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>F7FF735A1874D71B0041FEBD</string>
+				<string>F7FF735B1874D71B0041FEBD</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>defaultConfigurationName</key>
+			<string>Release</string>
+			<key>isa</key>
+			<string>XCConfigurationList</string>
+		</dict>
+		<key>F7FF735A1874D71B0041FEBD</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>4399357A34068AE3D576990E</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>ASSETCATALOG_COMPILER_APPICON_NAME</key>
+				<string>AppIcon</string>
+				<key>ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME</key>
+				<string>LaunchImage</string>
+				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
+				<string>YES</string>
+				<key>GCC_PREFIX_HEADER</key>
+				<string>DKCountryPicker/DKCountryPicker-Prefix.pch</string>
+				<key>INFOPLIST_FILE</key>
+				<string>DKCountryPicker/DKCountryPicker-Info.plist</string>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+				<key>WRAPPER_EXTENSION</key>
+				<string>app</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Debug</string>
+		</dict>
+		<key>F7FF735B1874D71B0041FEBD</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>C8F2E56086AF18B5AA2A6702</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>ASSETCATALOG_COMPILER_APPICON_NAME</key>
+				<string>AppIcon</string>
+				<key>ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME</key>
+				<string>LaunchImage</string>
+				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
+				<string>YES</string>
+				<key>GCC_PREFIX_HEADER</key>
+				<string>DKCountryPicker/DKCountryPicker-Prefix.pch</string>
+				<key>INFOPLIST_FILE</key>
+				<string>DKCountryPicker/DKCountryPicker-Info.plist</string>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+				<key>WRAPPER_EXTENSION</key>
+				<string>app</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Release</string>
+		</dict>
+		<key>F7FF735C1874D71B0041FEBD</key>
+		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>F7FF735D1874D71B0041FEBD</string>
+				<string>F7FF735E1874D71B0041FEBD</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>defaultConfigurationName</key>
+			<string>Release</string>
+			<key>isa</key>
+			<string>XCConfigurationList</string>
+		</dict>
+		<key>F7FF735D1874D71B0041FEBD</key>
+		<dict>
+			<key>buildSettings</key>
+			<dict>
+				<key>ARCHS</key>
+				<string>$(ARCHS_STANDARD_INCLUDING_64_BIT)</string>
+				<key>BUNDLE_LOADER</key>
+				<string>$(BUILT_PRODUCTS_DIR)/DKCountryPicker.app/DKCountryPicker</string>
+				<key>FRAMEWORK_SEARCH_PATHS</key>
+				<array>
+					<string>$(SDKROOT)/Developer/Library/Frameworks</string>
+					<string>$(inherited)</string>
+					<string>$(DEVELOPER_FRAMEWORKS_DIR)</string>
+				</array>
+				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
+				<string>YES</string>
+				<key>GCC_PREFIX_HEADER</key>
+				<string>DKCountryPicker/DKCountryPicker-Prefix.pch</string>
+				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
+				<array>
+					<string>DEBUG=1</string>
+					<string>$(inherited)</string>
+				</array>
+				<key>INFOPLIST_FILE</key>
+				<string>DKCountryPickerTests/DKCountryPickerTests-Info.plist</string>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+				<key>TEST_HOST</key>
+				<string>$(BUNDLE_LOADER)</string>
+				<key>WRAPPER_EXTENSION</key>
+				<string>xctest</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Debug</string>
+		</dict>
+		<key>F7FF735E1874D71B0041FEBD</key>
+		<dict>
+			<key>buildSettings</key>
+			<dict>
+				<key>ARCHS</key>
+				<string>$(ARCHS_STANDARD_INCLUDING_64_BIT)</string>
+				<key>BUNDLE_LOADER</key>
+				<string>$(BUILT_PRODUCTS_DIR)/DKCountryPicker.app/DKCountryPicker</string>
+				<key>FRAMEWORK_SEARCH_PATHS</key>
+				<array>
+					<string>$(SDKROOT)/Developer/Library/Frameworks</string>
+					<string>$(inherited)</string>
+					<string>$(DEVELOPER_FRAMEWORKS_DIR)</string>
+				</array>
+				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
+				<string>YES</string>
+				<key>GCC_PREFIX_HEADER</key>
+				<string>DKCountryPicker/DKCountryPicker-Prefix.pch</string>
+				<key>INFOPLIST_FILE</key>
+				<string>DKCountryPickerTests/DKCountryPickerTests-Info.plist</string>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+				<key>TEST_HOST</key>
+				<string>$(BUNDLE_LOADER)</string>
+				<key>WRAPPER_EXTENSION</key>
+				<string>xctest</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Release</string>
+		</dict>
+		<key>F7FF735F1874D79C0041FEBD</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>DKAppDelegate.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>F7FF73601874D79C0041FEBD</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>DKAppDelegate.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>F7FF73611874D79C0041FEBD</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>DKCountryPickerViewController.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>F7FF73621874D79C0041FEBD</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>DKCountryPickerViewController.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>F7FF73631874D79C0041FEBD</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>DKDemoViewController.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>F7FF73641874D79C0041FEBD</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>DKDemoViewController.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>F7FF73651874D79C0041FEBD</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>file.storyboard</string>
+			<key>path</key>
+			<string>Storyboard.storyboard</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>F7FF73661874D79C0041FEBD</key>
+		<dict>
+			<key>fileRef</key>
+			<string>F7FF73601874D79C0041FEBD</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>F7FF73671874D79C0041FEBD</key>
+		<dict>
+			<key>fileRef</key>
+			<string>F7FF73621874D79C0041FEBD</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>F7FF73681874D79C0041FEBD</key>
+		<dict>
+			<key>fileRef</key>
+			<string>F7FF73641874D79C0041FEBD</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>F7FF73691874D79C0041FEBD</key>
+		<dict>
+			<key>fileRef</key>
+			<string>F7FF73651874D79C0041FEBD</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+	</dict>
+	<key>rootObject</key>
+	<string>F7FF73251874D71B0041FEBD</string>
+</dict>
+</plist>
